@@ -37,7 +37,7 @@ jobs:
           touch test.txt
       - name: add test.txt to repo
         run: |
-          git checkout master
+          git checkout main
           git config --global user.name 'Extra'
           git config --global user.email 'extratortorella@gmail.com'
           git add test.txt
