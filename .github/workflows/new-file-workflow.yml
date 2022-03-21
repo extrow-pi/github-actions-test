@@ -35,6 +35,7 @@ jobs:
       - name: Create new file
         run: |
           touch test.txt
+          date > test.txt
       - name: add test.txt to repo
         run: |
           git config --global user.name 'Extra'
