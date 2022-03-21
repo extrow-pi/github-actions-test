@@ -37,6 +37,7 @@ jobs:
           touch test.txt
       - name: add test.txt to repo
         run: |
-          git add test.txt
-          git commit -m "Added test.txt"
+          git config --global user.name 'Extra'
+          git config --global user.email 'extratortorella@gmail.com'
+          git commit -am "Automated report"
           git push
